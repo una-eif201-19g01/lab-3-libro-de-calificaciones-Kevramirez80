@@ -18,10 +18,28 @@
 #define CALIFICACIONES_LIBROCALIFICACIONES_H
 
 #include <string>
-
+using namespace std;
+const int estudiantes = 10;
+const int examenes = 3;
 class LibroCalificaciones {
 
+private :
+
+	string nombreCurso;
+	int calificaciones[estudiantes][examenes];
 public:
+	LibroCalificaciones();
+	LibroCalificaciones(string nomreCurso,int arreglo[estudiantes][examenes]);
+	void setnombreCurso(string);
+	string getnombreCurso();
+	int obtenerNotaMinima();
+	int obtenerNotaMaxima();
+	void btenerReporteNotas();
+	string reporteNotaMaxMin();
+	~LibroCalificaciones();
+
+
+
 
 };
 
